@@ -6,47 +6,69 @@
     <link rel="stylesheet" href="css/estilo.css">
     
     </head>
-    <body style="background-color: #5FA0FF;">
-        <div class="dark-blue-section">
-            <img src="img/iconopan.png" alt="Icono Pan"style="height: 100;width: 100;">
-        <p style="color:white; font-size: 65px;">Productos</p>
-        </div>
-        <style>
 
-            .blue-section 
-            {
-                background-color: #5FA0FF;
-                padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
-            }
+
+    <style>
+
+        body {
+            background-color: #5FA0FF;
+            margin: 0; /* Elimina el margen predeterminado del cuerpo */
+            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+        }
+        .white-section 
+        {
+            background-color: #ffffff;
+            width: 100%;
+            height: 40%;  
+        }
+
+        .blue-section 
+        {
+            background-color: #5FA0FF;
+            padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
+        }
+
+        .dark-blue-section 
+        {
+            background-color: #1F4E79; /* Azul oscuro */
+            padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
+        }
+
+
+        table 
+        {
+        width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
+         
+        }
     
-            .dark-blue-section 
-            {
-                background-color: #1F4E79; /* Azul oscuro */
-                padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
-            }
-
-
-            table 
-            {
-            width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
-             
-            }
-        
-            td 
-            {
-                border: 0; /* Agrega un borde a las celdas para visualización */
-                padding: 50px; /* Agrega espacio de relleno en las celdas */
-                
-            }
-
-           
+        td 
+        {
+            border: 0; /* Agrega un borde a las celdas para visualización */
+            padding: 50px; /* Agrega espacio de relleno en las celdas */
             
-            img 
-            {
-                width: 300; /* Hace que las imágenes ocupen todo el ancho de las celdas */
-                height: 400; /* Mantiene la proporción de aspecto de las imágenes */
-            }
-        </style>
+        }
+
+       
+        
+        img 
+        {
+            width: 300; /* Hace que las imágenes ocupen todo el ancho de las celdas */
+            height: 400; /* Mantiene la proporción de aspecto de las imágenes */
+        }
+    </style>
+
+    
+ 
+    <div class="white-section" align="center">
+        <img src="img/iconopan.png" alt="Icono Pan"style="height: 200;width: 200;">
+        <p style="color:rgb(8, 85, 121); font-size: 65px;" >Productos</p>
+    </div>
+    
+    <body style="background-color: #5FA0FF;">
+
+        
+
+        
 
         <div style="text-align: right;" >
             <a href="index.html" style="font-size: 30px;">Inicio</a>
@@ -66,7 +88,7 @@
         <label>Monto a comprar</label>
             <input type="text" name="Monto a Comprar" placeholder="escribir monto">
         
-        <label>DISTRITO</label>
+        <label>Tipo de Pan</label>
             <select name="distrito">
                 <optgroup label="Pasteles">
                     <option>Pastel de cumpleaños</option>
@@ -179,118 +201,143 @@
 
        <h1>Lista de Productos de RicoPan</h1>
 
-            <ul>
-                <li>Pasteles <!-- Nueva categoría de Pasteles -->
-                    <ul>
-                        <li>Pastel de cumpleaños</li>
-                        <li>Pastel de boda</li>
-                        <li>Pastel de chocolate</li>
-                        <li>Pastel de frutas</li>
-                        <li>Tarta de queso</li>
-                        <li>Pastel de zanahoria</li>
-                    </ul>
-                </li>
-
-                <li>Pan Blanco
-                    <ul>
-                        <li>Pan de molde</li>
-                        <li>Baguette</li>
-                        <li>Pan de pueblo</li>
-                        <li>Pan de viena</li>
-                        <li>Pan de sándwich</li>
-                        <li>Pan de hamburguesa</li>
-                        <li>Pan de hot dog</li>
-                    </ul>
-                </li>
-                <li>Pan Integral
-                    <ul>
-                        <li>Pan integral de trigo</li>
-                        <li>Pan integral de centeno</li>
-                        <li>Pan integral de avena</li>
-                        <li>Pan integral de espelta</li>
-                        <li>Pan integral de multicereales</li>
-                    </ul>
-                </li>
-                <li>Pan Rústico
-                    <ul>
-                        <li>Ciabatta</li>
-                        <li>Fougasse</li>
-                        <li>Pan rústico de campo</li>
-                        <li>Pan de masa madre</li>
-                        <li>Pan de campesino</li>
-                        <li>Pan de pueblo artesanal</li>
-                    </ul>
-                </li>
-                <li>Pan Dulce
-                    <ul>
-                        <li>Rosca de reyes</li>
-                        <li>Panettone</li>
-                        <li>Brioche</li>
-                        <li>Pan de canela</li>
-                        <li>Pan de pasas</li>
-                        <li>Pan de chocolate</li>
-                    </ul>
-                </li>
-                <li>Panes Peruanos
-                    <ul>
-                        <li>Pan de chicharrón</li>
-                        <li>Pan de yema</li>
-                        <li>Pan francés (versión peruana)</li>
-                        <li>Pan con palta y jamón</li>
-                        <li>Tanta wawa (pan relleno de carne y aceitunas)</li>
-                        <li>Turrón de Doña Pepa (postre tradicional de masa de pan)</li>
-                    </ul>
-                </li>
-                <li>Pan de Especialidades
-                    <ul>
-                        <li>Pan de ajo</li>
-                        <li>Pan naan</li>
-                        <li>Pretzels</li>
-                        <li>Pan pita</li>
-                        <li>Pan de maíz</li>
-                        <li>Pan de nueces</li>
-                    </ul>
-                </li>
-                <li>Pan sin Gluten
-                    <ul>
-                        <li>Pan sin gluten</li>
-                        <li>Baguette sin gluten</li>
-                        <li>Pan de molde sin gluten</li>
-                        <li>Panecillos sin gluten</li>
-                    </ul>
-                </li>
-                <li>Pan para Sandwiches
-                    <ul>
-                        <li>Pan de sándwich</li>
-                        <li>Baguette para bocadillos</li>
-                        <li>Pan de perrito caliente</li>
-                        <li>Pan para hamburguesas</li>
-                        <li>Panecillos para sliders</li>
-                    </ul>
-                </li>
-                <li>Pan Tradicional de otros países
-                    <ul>
-                        <li>Chapati (India)</li>
-                        <li>Naan (India)</li>
-                        <li>Arepas (Venezuela y Colombia)</li>
-                        <li>Tortillas (México)</li>
-                        <li>Pão de queijo (Brasil)</li>
-                        <li>Pumpernickel (Alemania)</li>
-                    </ul>
-                </li>
+            
 
 
+            <table >
+                <tr>
+                    <td>
+
+                        <ul>
+                            <li>Pasteles <!-- Nueva categoría de Pasteles -->
+                                <ul>
+                                    <li>Pastel de cumpleaños</li>
+                                    <li>Pastel de boda</li>
+                                    <li>Pastel de chocolate</li>
+                                    <li>Pastel de frutas</li>
+                                    <li>Tarta de queso</li>
+                                    <li>Pastel de zanahoria</li>
+                                </ul>
+                            </li>
+            
+                            <li>Pan Blanco
+                                <ul>
+                                    <li>Pan de molde</li>
+                                    <li>Baguette</li>
+                                    <li>Pan de pueblo</li>
+                                    <li>Pan de viena</li>
+                                    <li>Pan de sándwich</li>
+                                    <li>Pan de hamburguesa</li>
+                                    <li>Pan de hot dog</li>
+                                </ul>
+                            </li>
+                            <li>Pan Integral
+                                <ul>
+                                    <li>Pan integral de trigo</li>
+                                    <li>Pan integral de centeno</li>
+                                    <li>Pan integral de avena</li>
+                                    <li>Pan integral de espelta</li>
+                                    <li>Pan integral de multicereales</li>
+                                </ul>
+                            </li>
+                            <li>Pan Rústico
+                                <ul>
+                                    <li>Ciabatta</li>
+                                    <li>Fougasse</li>
+                                    <li>Pan rústico de campo</li>
+                                    <li>Pan de masa madre</li>
+                                    <li>Pan de campesino</li>
+                                    <li>Pan de pueblo artesanal</li>
+                                </ul>
+                            </li>
+                            <li>Pan Dulce
+                                <ul>
+                                    <li>Rosca de reyes</li>
+                                    <li>Panettone</li>
+                                    <li>Brioche</li>
+                                    <li>Pan de canela</li>
+                                    <li>Pan de pasas</li>
+                                    <li>Pan de chocolate</li>
+                                </ul>
+                            </li>
+                            <li>Panes Peruanos
+                                <ul>
+                                    <li>Pan de chicharrón</li>
+                                    <li>Pan de yema</li>
+                                    <li>Pan francés (versión peruana)</li>
+                                    <li>Pan con palta y jamón</li>
+                                    <li>Tanta wawa (pan relleno de carne y aceitunas)</li>
+                                    <li>Turrón de Doña Pepa (postre tradicional de masa de pan)</li>
+                                </ul>
+                            </li>
+                            <li>Pan de Especialidades
+                                <ul>
+                                    <li>Pan de ajo</li>
+                                    <li>Pan naan</li>
+                                    <li>Pretzels</li>
+                                    <li>Pan pita</li>
+                                    <li>Pan de maíz</li>
+                                    <li>Pan de nueces</li>
+                                </ul>
+                            </li>
+                            <li>Pan sin Gluten
+                                <ul>
+                                    <li>Pan sin gluten</li>
+                                    <li>Baguette sin gluten</li>
+                                    <li>Pan de molde sin gluten</li>
+                                    <li>Panecillos sin gluten</li>
+                                </ul>
+                            </li>
+                            <li>Pan para Sandwiches
+                                <ul>
+                                    <li>Pan de sándwich</li>
+                                    <li>Baguette para bocadillos</li>
+                                    <li>Pan de perrito caliente</li>
+                                    <li>Pan para hamburguesas</li>
+                                    <li>Panecillos para sliders</li>
+                                </ul>
+                            </li>
+                            <li>Pan Tradicional de otros países
+                                <ul>
+                                    <li>Chapati (India)</li>
+                                    <li>Naan (India)</li>
+                                    <li>Arepas (Venezuela y Colombia)</li>
+                                    <li>Tortillas (México)</li>
+                                    <li>Pão de queijo (Brasil)</li>
+                                    <li>Pumpernickel (Alemania)</li>
+                                </ul>
+                            </li>
+            
+                        </ul>
+
+
+                        
+                    </td>
+                    <td>
+                        <frameset rows="50%">
+                            <frame src="pasteles.html">Pasteles</frame>
+            
+                        </frameset>
 
 
 
 
 
-            </ul>
+
+                    </td>
+                </tr>
+            </table>
+
+            
+
 
 
 
  
     </body>
+
+
+
 
     
 </html>
