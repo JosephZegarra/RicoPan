@@ -15,8 +15,16 @@
                 <img src="img/Panes/PastelCumpleanios.jpg" alt="Pastel de Cumpleaños" class="img-item"><br>
                 <span class="product-name">Pastel de Cumpleaños</span><br>
                 <span class="product-price">S/25.00</span><br>
-                <button>Comprar</button>
+                
+
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Pastel de Cumpleaños">
+                    <input type="hidden" name="precio" value="25.00">
+                    <button type="submit">Comprar</button>
+                </form>
             </div>
+
+
             
             
 
@@ -24,39 +32,91 @@
                 <img src="img/Panes/PastelBoda.jpg" alt="Pastel de Boda">
                 <span class="product-name">Pastel de Boda</span><br>
                 <span class="product-price">S/50.00</span><br>
-                <button>Comprar</button>
+                
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Pastel de Boda">
+                    <input type="hidden" name="precio" value="50.00">
+                    <button type="submit">Comprar</button>
+                </form>
             </div>
             
             <div class="product">
                 <img src="img/Panes/PastelChocolate.jpg" alt="Pastel de Chocolate">
                 <span class="product-name">Pastel de Chocolate</span><br>
                 <span class="product-price">S/30.00</span><br>
-                <button>Comprar</button>
+                
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Pastel de Chocolate">
+                    <input type="hidden" name="precio" value="30.00">
+                    <button type="submit">Comprar</button>
+                </form>
+
             </div>
             
             <div class="product">
                 <img src="img/Panes/PastelFrutas.jpg" alt="Pastel de Frutas">
                 <span class="product-name">Pastel de Frutas</span><br>
                 <span class="product-price">S/20.00</span><br>
-                <button>Comprar</button>
+                
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Pastel de Frutas">
+                    <input type="hidden" name="precio" value="20.00">
+                    <button type="submit">Comprar</button>
+                </form>
+
+
             </div>
             
             <div class="product">
                 <img src="img/Panes/TartaQueso.jpeg" alt="Tarta de Queso">
                 <span class="product-name">Tarta de Queso</span><br>
                 <span class="product-price">S/25.00</span><br>
-                <button>Comprar</button>
+                
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Tarta de Queso">
+                    <input type="hidden" name="precio" value="25.00">
+                    <button type="submit">Comprar</button>
+                </form>
             </div>
             
             <div class="product">
                 <img src="img/Panes/PastelZanahoria.jpg" alt="Pastel de Zanahoria">
                 <span class="product-name">Pastel de Zanahoria</span><br>
                 <span class="product-price">S/35.00</span><br>
-                <button>Comprar</button>
+                
+                <form action="carrito.php" method="post">
+                    <input type="hidden" name="producto" value="Pastel de Zanahoria">
+                    <input type="hidden" name="precio" value="35.00">
+                    <button type="submit">Comprar</button>
+                </form>
             </div>
        
 
-        
+
+
+
+
+
+
+
+            
+            <div id="carrito">
+                <?php
+                if (isset($_SESSION['carrito']) && count($_SESSION['carrito']) > 0) {
+                    echo '<h2>Carrito de Compras:</h2>';
+                    echo '<ul>';
+                    foreach ($_SESSION['carrito'] as $item) {
+                        echo '<li>' . $item['producto'] . ' - S/' . $item['precio'] . '</li>';
+                    }
+                    echo '</ul>';
+                    echo '<p>Total: S/' . $_SESSION['total'] . '</p>';
+                } else {
+                    echo '<p>El carrito está vacío.</p>';
+                }
+                ?>
+            </div>
+            
+            
 
        
         
