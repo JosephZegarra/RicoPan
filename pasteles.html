@@ -3,113 +3,112 @@
         <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>productos</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="style.css">
     
     </head>
 
 
-    <style>
-
-        body {
-            background-color: #5FA0FF;
-            margin: 0; /* Elimina el margen predeterminado del cuerpo */
-            padding: 0; /* Elimina el relleno predeterminado del cuerpo */
-        }
-        
-        .blue-section 
-        {
-            background-color: #5FA0FF;
-            padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
-        }
-
-        .dark-blue-section 
-        {
-            background-color: #1F4E79; /* Azul oscuro */
-            padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
-        }
-
-
-        
-
-
-
-        table {
-            
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        table, th, td {
-            
-            border: 0;
-            text-align: center;
-            padding: 10px;
-        }
-
-        /* Estilos para las imágenes */
-        img {
-            width: 350px;
-            height: 350px;
-        }
-    </style>
-
-    
- 
-   
-    
     <body style="background-color: #5FA0FF;">
 
-        
+
+            <div class="product">
+                <img src="img/Panes/PastelCumpleanios.jpg" alt="Pastel de Cumpleaños" class="img-item"><br>
+                <span class="product-name">Pastel de Cumpleaños</span><br>
+                <span class="product-price">S/25.00</span><br>
+                <button>Comprar</button>
+            </div>
+            
+            
+
+            <div class="product">
+                <img src="img/Panes/PastelBoda.jpg" alt="Pastel de Boda">
+                <span class="product-name">Pastel de Boda</span><br>
+                <span class="product-price">S/50.00</span><br>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="img/Panes/PastelChocolate.jpg" alt="Pastel de Chocolate">
+                <span class="product-name">Pastel de Chocolate</span><br>
+                <span class="product-price">S/30.00</span><br>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="img/Panes/PastelFrutas.jpg" alt="Pastel de Frutas">
+                <span class="product-name">Pastel de Frutas</span><br>
+                <span class="product-price">S/20.00</span><br>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="img/Panes/TartaQueso.jpeg" alt="Tarta de Queso">
+                <span class="product-name">Tarta de Queso</span><br>
+                <span class="product-price">S/25.00</span><br>
+                <button>Comprar</button>
+            </div>
+            
+            <div class="product">
+                <img src="img/Panes/PastelZanahoria.jpg" alt="Pastel de Zanahoria">
+                <span class="product-name">Pastel de Zanahoria</span><br>
+                <span class="product-price">S/35.00</span><br>
+                <button>Comprar</button>
+            </div>
+       
 
         
 
        
-
-        <table cellspacing="0" >
-            <tr>
-                <td><img src="img/Panes/PastelCumpleanios.jpg" alt="Pastel de Cumpleaños"></td>
-                <td><img src="img/Panes/PastelBoda.jpg" alt="Pastel de Boda"></td>
-                <td><img src="img/Panes/PastelChocolate.jpg" alt="Pastel de Chocolate"></td>
-            </tr>
-            <tr>
-                <td style="font-size: 25px;">Pastel de Cumpleaños</td>
-                <td style="font-size: 25px;">Pastel de Boda</td>
-                <td style="font-size: 25px;">Pastel de Chocolate</td>
-            </tr>
-            <tr>
-                <td style="font-size: 20px;">S/25.00</td>
-                <td style="font-size: 20px;">S/50.00</td>
-                <td style="font-size: 20px;">S/30.00</td>
-            </tr>
-
-
-            <tr>
-                <td><img src="img/Panes/PastelFrutas.jpg" alt="Pastel de Cumpleaños"></td>
-                <td><img src="img/Panes/TartaQueso.jpeg" alt="Pastel de Boda"></td>
-                <td><img src="img/Panes/PastelZanahoria.jpg" alt="Pastel de Chocolate"></td>
-            </tr>
-            <tr>
-                <td style="font-size: 25px;">Pastel de Frutas</td>
-                <td style="font-size: 25px;">Tarta de Queso</td>
-                <td style="font-size: 25px;">Pastel de Zanahoria</td>
-            </tr>
-            <tr>
-                <td style="font-size: 20px;">S/20.00</td>
-                <td style="font-size: 20px;">S/25.00</td>
-                <td style="font-size: 20px;">S/35.00</td>
-            </tr>
-
-
-
-            
-        </table>
+        
+        
     
 
     
  
     </body>
 
+    <style>
+    .product {
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+        margin: 10px;
+        contain: paint;
+        justify-content: space-between;
+    }
 
+    .product img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+    }
+
+    .product-name {
+        font-size: 25px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    div
+    {   
+        border: 1px solid #000;
+        border-radius:10%;
+        padding: 20px;
+        max-width: 250px;
+        margin: auto;
+        background: rgba(255, 255, 255, 0.815);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Sombra alrededor de la tabla */
+        background: rgba(50%)
+
+
+    }
+   
+    
+
+
+</style>
 
 
     

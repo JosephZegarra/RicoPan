@@ -1,0 +1,93 @@
+body 
+    {
+background-image: url(img/fodopan.jpg);
+
+margin: 0; /* Elimina el margen predeterminado del cuerpo */
+padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+.white-section 
+{
+    background-color: #ffffff;
+    width: 100%;
+    height: 350px;  
+    padding: 5px;
+}
+.blue-section 
+{
+    background-color: #5FA0FF;
+    padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
+}
+
+.dark-blue-section 
+{
+    background-color: #1F4E79; /* Azul oscuro */
+    padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
+}
+
+.blue-enlaces-section 
+{
+    background-color: #7eabef;
+    padding: 20px; /* Agregar un espacio de relleno para separar el contenido */
+}
+
+
+table 
+{
+width: 100%; /* Hace que la tabla ocupe todo el ancho de la página */
+    
+}
+
+
+
+#table_estilo-transparente-crema
+{
+
+border-collapse: collapse; /* Combina los bordes de las celdas para dar un aspecto uniforme */
+background: rgba(207, 176, 108, 0.7); /* Fondo translúcido */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor de la tabla */
+width: 80%; /* Ancho de la tabla */
+margin: 0 auto; /* Centra la tabla en la página */    
+}
+td 
+{
+    border: 0; /* Agrega un borde a las celdas para visualización */
+    padding: 50px; /* Agrega espacio de relleno en las celdas */
+    width: 50%;
+}
+
+
+
+#img
+{
+    width: 400; /* Hace que las imágenes ocupen todo el ancho de las celdas*/
+    height: 400; /* Mantiene la proporción de aspecto de las imágenes*/
+}
+
+a
+{
+    text-decoration: none;
+    text-decoration-color: #ffffff;
+}
+
+/* login*/
+#loginicono{
+    text-align: left;
+}
+
+
+input{
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #3498db
+}
+
+.contenedor-login{
+
+}
+
+
